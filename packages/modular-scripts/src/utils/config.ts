@@ -106,6 +106,7 @@ function searchConfig(
     return cachedConfig;
   } else {
     const config = explorer.search(path.join(workspacePath, 'package.json'));
+    console.log(config);
     configurations.set(workspacePath, config);
     return config;
   }
